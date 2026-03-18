@@ -1,0 +1,319 @@
+/* WP Endpoint Guard — Admin Styles */
+
+.wpeg-settings-wrap,
+.wpeg-keys-wrap,
+.wpeg-endpoints-wrap {
+	margin-top: 20px;
+}
+
+/* JWT secret row */
+.wpeg-jwt-secret-wrap {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.wpeg-jwt-secret-wrap input[type="text"] {
+	max-width: 500px;
+	font-size: 12px;
+}
+
+.wpeg-warning {
+	color: #d63638;
+	font-style: italic;
+}
+
+/* Status message */
+.wpeg-status-msg {
+	margin-left: 10px;
+	font-weight: 600;
+}
+
+.wpeg-status-msg.success {
+	color: #00a32a;
+}
+
+.wpeg-status-msg.error {
+	color: #d63638;
+}
+
+/* Keys page */
+.wpeg-keys-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.wpeg-generate-wrap {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.wpeg-limit-notice {
+	color: #d63638;
+	font-style: italic;
+	font-size: 13px;
+}
+
+/* Key status badges */
+.wpeg-status {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.wpeg-status-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.wpeg-status-revoked {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Modal */
+.wpeg-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wpeg-modal-content {
+	background: #fff;
+	padding: 30px;
+	border-radius: 6px;
+	max-width: 600px;
+	width: 90%;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.wpeg-key-display {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 15px 0;
+	padding: 12px;
+	background: #f0f0f1;
+	border-radius: 4px;
+}
+
+.wpeg-key-display code {
+	flex: 1;
+	word-break: break-all;
+	font-size: 14px;
+	padding: 0;
+	background: none;
+}
+
+/* Endpoints page */
+.wpeg-endpoints-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.wpeg-endpoints-header-actions {
+	display: flex;
+	gap: 6px;
+}
+
+.wpeg-filters {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+}
+
+.wpeg-bulk-actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.wpeg-col-check {
+	width: 30px;
+}
+
+.wpeg-rule-select {
+	min-width: 130px;
+}
+
+/* Namespace quick nav */
+.wpeg-namespace-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 20px;
+	padding: 12px;
+	background: #f0f0f1;
+	border-radius: 4px;
+}
+
+.wpeg-nav-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 4px 12px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 20px;
+	font-size: 13px;
+	color: #2c3338;
+	text-decoration: none;
+	transition: all 0.15s ease;
+}
+
+.wpeg-nav-pill:hover {
+	background: #2271b1;
+	border-color: #2271b1;
+	color: #fff;
+}
+
+.wpeg-nav-pill:hover .wpeg-nav-count {
+	background: rgba(255, 255, 255, 0.25);
+	color: #fff;
+}
+
+.wpeg-nav-pill-custom {
+	border-color: #2271b1;
+	background: #e7f3fe;
+	font-weight: 600;
+}
+
+.wpeg-nav-count {
+	display: inline-block;
+	background: #dcdcde;
+	color: #50575e;
+	font-size: 11px;
+	padding: 0 6px;
+	border-radius: 10px;
+	line-height: 18px;
+	font-weight: 600;
+}
+
+/* Accordion */
+.wpeg-accordion {
+	margin-bottom: 4px;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.wpeg-accordion-toggle {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 12px 16px;
+	background: #f6f7f7;
+	border: none;
+	border-bottom: 1px solid transparent;
+	cursor: pointer;
+	font-size: 14px;
+	text-align: left;
+	transition: background 0.15s ease;
+	gap: 8px;
+}
+
+.wpeg-accordion-toggle:hover {
+	background: #eff0f1;
+}
+
+.wpeg-accordion-custom {
+	background: #e7f3fe;
+}
+
+.wpeg-accordion-custom:hover {
+	background: #d4e9fc;
+}
+
+.wpeg-accordion.is-open .wpeg-accordion-toggle {
+	border-bottom-color: #c3c4c7;
+}
+
+.wpeg-accordion-arrow {
+	transition: transform 0.2s ease;
+	color: #50575e;
+}
+
+.wpeg-accordion.is-open .wpeg-accordion-arrow {
+	transform: rotate(90deg);
+}
+
+.wpeg-accordion-title {
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.wpeg-accordion-meta {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	color: #646970;
+}
+
+.wpeg-route-count {
+	color: #646970;
+}
+
+.wpeg-badge {
+	display: inline-block;
+	padding: 1px 8px;
+	border-radius: 10px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 18px;
+}
+
+.wpeg-badge-auth {
+	background: #fcf0e3;
+	color: #9a6700;
+}
+
+.wpeg-badge-block {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.wpeg-accordion-body {
+	padding: 0;
+}
+
+.wpeg-accordion-body .wp-list-table {
+	border: none;
+	margin: 0;
+}
+
+/* Hide the accordion section when filtered out */
+.wpeg-accordion.wpeg-hidden {
+	display: none;
+}
+
+/* Row highlight on save */
+.wpeg-saved {
+	animation: wpeg-flash 0.6s ease;
+}
+
+@keyframes wpeg-flash {
+	0% { background-color: #d4edda; }
+	100% { background-color: transparent; }
+}
